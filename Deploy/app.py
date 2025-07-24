@@ -134,4 +134,4 @@ if st.button("Mulai Chat Baru"):
     st.session_state.messages = [
         {"role": INITIAL_CHATBOT_CONTEXT[1]["role"], "content": INITIAL_CHATBOT_CONTEXT[1]["parts"][0]}
     ]
-    st.experimental_rerun()
+    st.rerun() # <--- GANTI BAGIAN INI: DARI st.experimental_rerun() MENJADI st.rerun()
